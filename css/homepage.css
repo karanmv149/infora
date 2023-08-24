@@ -3,88 +3,87 @@
     padding: 0;
 }
 
-
-nav {
-    padding: 5.9px;
-    position: fixed;
-    width: 100%;
+    nav {
+        position: fixed;
+        width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.583);
     display: flex;
-    background-color: rgb(63, 60, 60);
-    padding-right: 0;
+    align-items: center;
+
 }
 
+
 .logo {
-    float: left;
-    width: 40px;
-    justify-content: center;
+    height: 40px;
+    background-color: grey;
     border: 2px solid white;
     border-radius: 50px;
-
+    float: left;
 }
 
 .logo img {
-    width: 40px;
+    height: 40px;
     float: left;
 }
 
 .menubar {
-    width: 15.6%;
-    margin: 12px;
-    display: flex;
-    /* display: inline; */
-    text-align: center;
-    
+    float: left;
+    width: 50%;
+}
 
+.menubar a {
+    text-decoration: none;
+    color: white;
+    margin: 23px 23px;
+}
+.menubar a:hover{
+    color: grey;
 }
 
 .searchbox {
-    /* display: flex; */
-    float: right;
-    top: 0%;
-
-
+    width: 50%;
+    margin: 12px 12px;
+    text-align: right;
 }
 
-.menubar,
-a {
-    font-family: monospace;
-    text-decoration: underline solid white;
-    display: flex;
-    font-size: large;
-    font-weight: bold;
-    margin-left: 7px;
+.searchbox #search {
+    border-radius: 8px;
+    padding: 3px;
+    font-size: 17px;
     text-decoration: none;
-    color: white;
+    border: 2px solid black;
 }
 
-.menubar:hover a{
-    filter: blur(1px);
+.searchbox #btn {
+    border-radius: 8px;
+    padding: 3px;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid black;
 }
-
-.menubar a:hover {
-    filter: blur(0px);
-}
-
-
 
 .subjects{
-    background-color: grey;
+    /* background-color: black; */
+    padding: 2%;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+    align-content: center;
+    margin: 0;
+    background: url('../img/mainbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;   
 }
 
-.subjects a{
-    color: black;
-    
-}
 
-.subjects img{
-    width: 360px;
-    filter: drop-shadow(black);
-    border: 5px solid whitesmoke;
-    border-radius: 40px;
+.subjects #subimg img{
+    margin: 24px;
+    height: 243px;
+    border: 4px solid white;
+    border-radius: 30px;
 }
 
 
@@ -92,10 +91,12 @@ a {
 
 
 footer {
-    height: 25px;
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     width: 100%;
     text-align: center;
-
+    position: absolute;
+    margin: 0;
+    padding: 0;
 }
+
